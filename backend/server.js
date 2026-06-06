@@ -19,10 +19,6 @@ app.use('/api/auth', require('./src/routes/authRoutes'));
 app.use('/api/bundles', require('./src/routes/bundleRoutes'));
 app.use('/api/transactions', require('./src/routes/transactionRoutes'));
 app.use('/api/admin', require('./src/routes/adminRoutes'));
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://YOUR_VERCEL_APP.vercel.app'],
-  credentials: true,
-}));
 
 // Test route
 app.get('/api/hello', (req, res) => {
