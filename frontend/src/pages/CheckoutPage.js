@@ -37,7 +37,7 @@ function CheckoutPage() {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/transactions/purchase`, {
+      await axios.post(`${API_URL}/transactions/purchase`, {
         phoneNumber: user.phoneNumber,
         bundleId: bundle._id,
         recipientPhone,
