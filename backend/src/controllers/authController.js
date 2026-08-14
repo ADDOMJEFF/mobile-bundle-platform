@@ -1,5 +1,4 @@
 const User = require('../models/User');
-const admin = require('../config/firebase');
 
 // @desc    Send OTP to phone number
 // @route   POST /api/auth/send-otp
