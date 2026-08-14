@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://mobile-bundle-platform.onrender.com/api';
 
 function CheckoutPage() {
   const { bundleId } = useParams();
